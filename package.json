@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:css": "tailwind build src/style.css -o dist/main.css",
+    "build:css": "tailwind build src/style.css -o main.css",
     "git": "git add . && git commit -m",
     "postgit": "git push -u origin main"
   },
