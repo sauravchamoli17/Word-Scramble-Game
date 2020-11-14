@@ -29,6 +29,7 @@ const scrambleWords = (arr) => {
 
 btn.addEventListener('click', function () {
     if (!play) {
+        confetti.stop();
         play = true;
         //Change button text to guess
         btn.innerHTML = "Guess";
@@ -51,6 +52,7 @@ btn.addEventListener('click', function () {
         let guessedWord = guess.value;
         if (wordToGuess === guessedWord) {
             message.innerHTML = `Good Job! It is ${wordToGuess}`;
+            confetti.start();
             guess.classList.toggle('hidden');
             hint.classList.toggle('hidden');
             btn.innerHTML = `Play Again`;
